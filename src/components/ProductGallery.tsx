@@ -44,12 +44,14 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
             <button
               onClick={prevImage}
               className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-600 hover:text-gray-900 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+              title="Previous image"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
             <button
               onClick={nextImage}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-600 hover:text-gray-900 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+              title="Next image"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -60,6 +62,7 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
         <button
           onClick={() => setIsZoomed(!isZoomed)}
           className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-600 hover:text-gray-900 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          title="Zoom image"
         >
           <ZoomIn className="h-5 w-5" />
         </button>
@@ -109,6 +112,7 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
             <button
               onClick={() => setIsZoomed(false)}
               className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-600 hover:text-gray-900 p-2 rounded-full shadow-lg z-10"
+              title="Close zoom"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>

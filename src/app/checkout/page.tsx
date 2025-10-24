@@ -158,7 +158,6 @@ export default function CheckoutPage() {
           city: formData.city,
           district: formData.district,
           ward: formData.ward,
-          zipCode: formData.zipCode
         },
         paymentMethod: formData.paymentMethod,
         notes: formData.notes

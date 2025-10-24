@@ -426,6 +426,7 @@ export default function ProductsPage() {
                 {sortedProducts.map((product) => (
                   <ProductCard
                     key={product.id}
+                    viewMode={viewMode}
                     product={{
                       id: product.id,
                       name: product.name,

@@ -94,10 +94,11 @@ export default function RelatedProducts({ products }: RelatedProductsProps) {
                         ? 'bg-red-500 text-white'
                         : 'bg-white text-gray-600 hover:bg-red-500 hover:text-white'
                     }`}
+                    title={likedProducts.includes(product.id) ? 'Remove from favorites' : 'Add to favorites'}
                   >
                     <Heart className="h-4 w-4" />
                   </button>
-                  <button className="p-2 bg-white text-gray-600 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition-colors">
+                  <button className="p-2 bg-white text-gray-600 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition-colors" title="View product details">
                     <Eye className="h-4 w-4" />
                   </button>
                 </div>

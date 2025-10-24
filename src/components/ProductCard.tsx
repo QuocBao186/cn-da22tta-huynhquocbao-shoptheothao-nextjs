@@ -16,6 +16,7 @@ interface Product {
   brand: string;
   inStock: boolean;
   stock: number;
+  description?: string;
 }
 
 interface ProductCardProps {

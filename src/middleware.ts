@@ -1,7 +1,5 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import jwt from 'jsonwebtoken';
-import { config } from './lib/config';
 
 export function middleware(request: NextRequest) {
   // Bỏ bảo mật middleware cho admin routes
